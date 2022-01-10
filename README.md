@@ -77,14 +77,19 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-This is still under work. Design is finished. However, I am still writing the manual. As you can see, even for first grade electronical engineering students, there is actually nothing hard or important about this repo, since this is a simple wheatstone bridge for HX711 module. However, while I work in my university, several students from computer sciences and engineering required a simple wheatstone bridge for strain gauge applications. This is was a design for a really primative strain reader. It will not be useful in data acquisition applications, but it will help you learn if you are a new starter to strain gauge applications. It will, also, give you a great trick to easily calibrate your system or readings. A calibration that does not only calibrates the IC, but calibrates the whole system.
+This is a simple PCB that is designed to work with commonly found HX711 Arduino module. So, this is an extension to the original HX711 module shown below.
+
+This is still under work. Design is finished. However, I am still writing the manual. As you can see, even for first grade electronical engineering students, there is actually nothing hard or important about this repo, since this is a simple wheatstone bridge for HX711 module. However, while I work in my university, several students from computer sciences and engineering departments required a simple wheatstone bridge for strain gauge applications. This was a design for a really primative strain reader. It will not be useful in data acquisition applications, but it will help you learn if you are a new starter to strain gauge applications. It will, also, give you a great trick to easily calibrate your system or readings. A calibration that does not only calibrates the IC, but calibrates the whole system.
 
 <b>Why do you need a PCB when you can do new-starter-things on breadboard?</b>
 
 Since wheatstone bridges are really sensitive, it is imposible to acquire data on breadboards. If you like to see why, build a wheatstone bridge on breadboard with any 24bit ADC and softly blow on the breadboard. The readings will go crazy. Also, any use of standard breadboard jumpers will have the same efect. This SIMPLE one sided PCB is to minimize such enviromental effect. 
 
 
-BE CAREFUL!
+<b>BE CAREFUL!</b>
+<br>
+This PCB is designed to work with HW-27 Arduino module. However, it will work for the modules that has the same "J1" (see picture below) pin configuration.
+
 ![Module](images/HX711.jpg)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -93,16 +98,9 @@ BE CAREFUL!
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+The design and shematics are made in Eagle. I aim to add universal data packages as well. However, if you would like to change the dimensions, packages, or anything else, Eagle is a free software right now.
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Eagle](https://www.autodesk.com/products/eagle/free-download)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -110,9 +108,9 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <!-- GETTING STARTED -->
 ## Getting Started
+First of all, you need to know basics of wheatstone bridge, and calculations. If you dont know where to start, HBM provides a good start-up knowledge [here](https://www.hbm.com/en/7163/wheatstone-bridge-circuit/). If you already have another source, you can use that as well, but be careful of resistor names, exitation points and reading points. They will vary.
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+There are several ways to use the PCB. It mainly depends on your budget and requried output quality. NO DOT FORGET that, HX711 is not an IC that a medium or advanced strain reader can be designed from.
 
 ### Prerequisites
 
