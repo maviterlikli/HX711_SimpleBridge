@@ -8,16 +8,18 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+<!-- 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+-->
 
 
 
-<!-- PROJECT LOGO -->
+<!-- PROJECT LOGO 
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
@@ -39,7 +41,7 @@
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
 </div>
-
+-->
 
 
 <!-- TABLE OF CONTENTS -->
@@ -73,18 +75,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This is still under work. Design is finished. However, I am still writing the manual. As you can see, even for first grade electronical engineering students, there is actually nothing hard or important about this repo, since this is a simple wheatstone bridge for HX711 module. However, while I work in my university, several students from computer sciences and engineering required a simple wheatstone bridge for strain gauge applications. This is was a design for a really primative strain reader. It will not be useful in data acquisition applications, but it will help you learn if you are a new starter to strain gauge applications. It will, also, give you a great trick to easily calibrate your system or readings. A calibration that does not only calibrates the IC, but calibrates the whole system.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+<b>Why do you need a PCB when you can do new-starter-things on breadboard?</b>
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+Since wheatstone bridges are really sensitive, it is imposible to acquire data on breadboards. If you like to see why, build a wheatstone bridge on breadboard with any 24bit ADC and softly blow on the breadboard. The readings will go crazy. Also, any use of standard breadboard jumpers will have the same efect. This SIMPLE one sided PCB is to minimize such enviromental effect. 
 
-Use the `BLANK_README.md` to get started.
+
+BE CAREFUL!
+![Module](images/HX711.jpg)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
