@@ -135,9 +135,7 @@ Assuming quarter-bridge configuration with trimpot as zero-balancer;
 | Strain Gauge  | Required Resistors | Required TrimPots|
 | ------------- | ------------- | ------------- |
 | Ohm  | NumberofResistorsxOhm | NumberofTrimpotsxOhm |
-| 120 Ω  | 3x120 |  1x50 |
-| 350 Ω  | 3x350   | 1x50 |
-| 1000 Ω  | 3x1000  | 1x50 |
+| 350 Ω  | 3x330   | 1x50 |
 
 
 Okay, I am gonna take a lot of heat from that table. Because most of the resistor values are not avaliable. I know that. This is IDEALLY. I will talk about the implementation as well.
