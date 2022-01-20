@@ -122,7 +122,7 @@ After this point, every value, name or component will be refered to the followin
 
 First of all, you need to know basics of Wheatstone bridge, and calculations. If you do not know where to start, HBM provides a good start-up knowledge [here](https://www.hbm.com/en/7163/wheatstone-bridge-circuit/). If you already have another source, you can use that as well, but be careful of resistor names, excitation points and reading points. They will vary.
 
-You are required to know how ADC output works. It is simply a bit value converted to decimal, which has the maximum decimal value as maximum voltage and minimum decimal value as your minimum voltage. maximum and minimum decimal values are dependent on your ADC bir resolution. For HX711, in data sheet it is given as "The output 24 bits of data is in 2’s complement format. When input differential signal goes out of the 24 bit range, the output data will be saturated at 800000h (MIN) or 7FFFFFh (MAX), until the input signal comes back to the input range"
+You are required to know how ADC output works. It is simply a bit value converted to decimal, which has the maximum decimal value as maximum voltage and minimum decimal value as your minimum voltage. Maximum and minimum decimal values are dependent on your ADC bit resolution. For HX711, in data sheet it is given as "The output 24 bits of data is in 2’s complement format. When input differential signal goes out of the 24 bit range, the output data will be saturated at 800000h (MIN) or 7FFFFFh (MAX), until the input signal comes back to the input range"
 So;
 
 800000h will be equal to -8388608
